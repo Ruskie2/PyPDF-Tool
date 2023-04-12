@@ -10,8 +10,8 @@ def remove_pages_from_pdf(input_file, output_file, pages_to_remove):
                 writer.add_page(page)
         with open(output_file, 'wb') as outfile:
             writer.write(outfile)
-inputpdf = 'E:/Programming_PDFs/Chap03.pdf'
-outputpdf = 'C:/Users/drcam/OneDrive/Desktop/test.pdf'
+inputpdf = 'E:/NAME.pdf'
+outputpdf = 'C:/OTHERNAME.pdf'
 # Example usage: remove the first and third pages from input.pdf and save the result to output.pdf
 #remove_pages_from_pdf('input.pdf', 'output.pdf', [0, 1])
 remove_pages_from_pdf(inputpdf, outputpdf, [0, 1])
